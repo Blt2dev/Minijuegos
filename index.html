@@ -3,17 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Minijuegos Bonitos</title>
+  <title>Snake Game</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="menu">
-    <h1>🎮 Minijuegos</h1>
-    <nav>
-      <a href="coinflip/index.html" class="btn-animated">Coinflip</a>
-      <a href="mines/index.html" class="btn-animated">Minas</a>
-      <a href="snake/index.html" class="btn-animated">Snake</a>
-    </nav>
+  <div class="menu" id="menu">
+    <h1>🐍 Snake Game</h1>
+    <button id="startBtn" class="btn-animated">Jugar</button>
   </div>
+
+  <div class="game-container" id="gameContainer">
+    <div class="score">Puntos: <span id="score">0</span></div>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
