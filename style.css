@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.menu {
+  text-align: center;
+  background: white;
+  padding: 40px 60px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  user-select: none;
+}
+
+.menu h1 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #27ae60;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+}
+
+nav a {
+  display: inline-block;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1.4em;
+  padding: 15px 40px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #27ae60, #2ecc71, #27ae60);
+  background-size: 200% 200%;
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 6px 12px rgba(39, 174, 96, 0.6);
+  transition: box-shadow 0.3s ease;
+  animation: btnAnim 3s ease infinite;
+  user-select: none;
+}
+
+nav a:hover {
+  box-shadow: 0 10px 20px rgba(46, 204, 113, 0.85);
+}
+
+@keyframes btnAnim {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
